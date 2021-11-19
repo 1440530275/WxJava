@@ -81,7 +81,7 @@ public class WxConsts {
      */
     public static final String MPNEWS = "mpnews";
     /**
-     * 草稿发布的图文消息 (点击跳转到图文消息也绵绵)
+     * 草稿发布的图文消息 (点击跳转到图文消息页面)
      */
     public static final String MPNEWSARTICLE = "mpnewsarticle";
     /**
