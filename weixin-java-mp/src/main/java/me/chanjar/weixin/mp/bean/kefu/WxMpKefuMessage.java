@@ -32,6 +32,7 @@ public class WxMpKefuMessage implements Serializable {
   private String kfAccount;
   private String cardId;
   private String mpNewsMediaId;
+  private String mpNewsArticleId;
   private String miniProgramAppId;
   private String miniProgramPagePath;
   private String headContent;
@@ -88,8 +89,16 @@ public class WxMpKefuMessage implements Serializable {
   /**
    * 获得图文消息（点击跳转到图文消息页面）builder.
    */
+  @Deprecated
   public static MpNewsBuilder MPNEWS() {
     return new MpNewsBuilder();
+  }
+
+  /**
+   * 获得图文消息 (点击跳转到图文消息页面) builder.
+   */
+  public static MpNewsArticleBuilder MPNEWSARTICLE(){
+    return new MpNewsArticleBuilder();
   }
 
   /**

@@ -12,6 +12,7 @@ import me.chanjar.weixin.mp.bean.kefu.WxMpKefuMessage;
  *
  * @author Binary Wang
  */
+@Deprecated
 public final class MpNewsBuilder extends BaseBuilder<MpNewsBuilder> {
   private String mediaId;
 

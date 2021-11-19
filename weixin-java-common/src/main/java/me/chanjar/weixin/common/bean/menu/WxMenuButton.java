@@ -54,9 +54,20 @@ public class WxMenuButton implements Serializable {
    * 调用新增永久素材接口返回的合法media_id.
    * media_id类型和view_limited类型必须
    * </pre>
+   * <note>媒体id在灰度完成之后将会取消</note>
    */
+  @Deprecated
   @SerializedName("media_id")
   private String mediaId;
+
+  /**
+   * <pre>
+   *   用户点击 article_id 类型按钮后，微信客户端将会以卡片形式，
+   *   下发开发者在按钮中填写的图文消息
+   * </pre>
+   */
+  @SerializedName("article_id")
+  private String articleId;
 
   /**
    * <pre>

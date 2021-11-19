@@ -68,6 +68,11 @@ public class WxMpKefuMessageGsonAdapter implements JsonSerializer<WxMpKefuMessag
         json.addProperty("media_id", message.getMpNewsMediaId());
         messageJson.add("mpnews", json);
         break;
+      case KefuMsgType.MPNEWSARTICLE:
+        JsonObject articleJson = new JsonObject();
+        articleJson.addProperty("article_id", message.getMpNewsArticleId());
+        messageJson.add("mpnewsarticle", articleJson);
+        break;
       case KefuMsgType.WXCARD:
         JsonObject wxcard = new JsonObject();
         wxcard.addProperty("card_id", message.getCardId());

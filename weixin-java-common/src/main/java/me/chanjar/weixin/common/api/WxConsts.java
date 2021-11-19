@@ -81,6 +81,10 @@ public class WxConsts {
      */
     public static final String MPNEWS = "mpnews";
     /**
+     * 草稿发布的图文消息 (点击跳转到图文消息也绵绵)
+     */
+    public static final String MPNEWSARTICLE = "mpnewsarticle";
+    /**
      * markdown消息.
      * （目前仅支持markdown语法的子集，微工作台（原企业号）不支持展示markdown消息）
      */
